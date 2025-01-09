@@ -1,0 +1,64 @@
+#jobs
+{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.jobTitle
+{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.jobDescription
+{
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+.jobBoxes {
+    margin: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jobBox {
+    margin: 1rem;
+    width: 300px;
+    height: 300px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.jobBox:hover {
+    transform: scale(1.05); 
+    background: rgb(70, 70, 70); 
+}
+
+.jobimg
+{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.jobText>p
+{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+}

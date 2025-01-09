@@ -1,0 +1,59 @@
+.navbar
+{
+    background: rgb(30,30,30);
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.desktopItems {
+    margin: 1rem;
+    cursor: pointer;
+    position: relative; /* Needed for positioning the pseudo-element */
+}
+
+.desktopItems::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(21, 179, 179);
+    transition: width 0.3s ease; /* Adjust timing and easing as needed */
+}
+
+.desktopItems:hover::after {
+    width: 100%; /* Expands the border on hover */
+}
+
+.desktopMenuimg
+{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+.desktopMenuBtn {
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.desktopMenuBtn:hover {
+    transform: scale(1.1);
+}

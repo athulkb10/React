@@ -1,0 +1,42 @@
+#Contact
+{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.contactTitle
+{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.contactTitle>p
+{
+    margin-bottom: -100px;
+    font-weight: 300;
+}
+.contactInfo
+{
+    margin: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+.number
+{
+    margin: 1rem;
+    
+}
+.info
+{
+    font-weight: 200;
+}
